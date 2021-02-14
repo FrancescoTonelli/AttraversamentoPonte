@@ -145,7 +145,7 @@ namespace AttraversamentoPonte
                     imgStopSx.Visibility = Visibility.Visible;
                     while(macchineADx != 0)
                     {
-                        for (int i = 0; i < macchineADx; i++)
+                        for (int i = 1; i <= macchineADx; i++)
                         {
                             autoSx[i].Visibility = Visibility.Visible;
                             autoSx[i].Margin = new Thickness(172, 231, 0, 0);
@@ -174,7 +174,7 @@ namespace AttraversamentoPonte
                     imgStopDx.Visibility = Visibility.Visible;
                     while (macchineADx != 0)
                     {
-                        for (int i = 0; i < macchineADx; i++)
+                        for (int i = 1; i <= macchineADx; i++)
                         {
                             autoDx[i].Visibility = Visibility.Visible;
                             autoDx[i].Margin = new Thickness(462, 231, 0, 0);
