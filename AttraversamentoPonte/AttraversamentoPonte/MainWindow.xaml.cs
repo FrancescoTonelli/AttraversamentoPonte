@@ -34,11 +34,10 @@ namespace AttraversamentoPonte
         bool blocco;
         public object ponte = new object();
 
-        Thread d1, d2, d3, d4, d5, d6, d7, d8, d9, d10;
-        Thread s1, s2, s3, s4, s5, s6, s7, s8, s9, s10;
-
         private void Start()
         {
+            blocco = false;
+
             imgStopDx.Visibility = Visibility.Hidden;
             imgStopSx.Visibility = Visibility.Hidden;
             autoDx1.Visibility = Visibility.Hidden;
@@ -62,14 +61,28 @@ namespace AttraversamentoPonte
             autoSx9.Visibility = Visibility.Hidden;
             autoSx10.Visibility = Visibility.Hidden;
 
-            btnPlay.Visibility = Visibility.Hidden;
+            macchineADx = 1;
+            autoDx1.Visibility = Visibility.Visible;
+            autoDx1.Margin = new Thickness(481, 231, 0, 0);
+            Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+            autoDx1.Margin = new Thickness(270, 231, 0, 0);
+            Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+            autoDx1.Margin = new Thickness(10, 231, 0, 0);
+            macchineADx--;
+            Thread.Sleep(TimeSpan.FromMilliseconds(500));
+            autoDx1.Visibility = Visibility.Hidden;
+            autoDx1.Margin = new Thickness(692, 231, 0, 0);
 
+
+            btnPlay.Visibility = Visibility.Hidden;
+            /*
             Thread AggiuntaMacchine = new Thread(new ThreadStart(AggiungiMacchine));
             Thread MuoviMacchineDaDx = new Thread(new ThreadStart(MuoviDaDx));
             Thread MuoviMacchineDaSx = new Thread(new ThreadStart(MuoviDaSx));
             AggiuntaMacchine.Start();
             MuoviMacchineDaDx.Start();
             MuoviMacchineDaSx.Start();
+            */
         }
 
         private void btnPlay_Click(object sender, RoutedEventArgs e)
@@ -124,13 +137,111 @@ namespace AttraversamentoPonte
                 this.Dispatcher.BeginInvoke(new Action(() =>
                 {
                     imgStopSx.Visibility = Visibility.Visible;
-                    while(macchineADx != 0)
+                    while (!blocco)
                     {
-                        for (int i = 1; i <= macchineADx; i++)
+                        switch (macchineADx)
                         {
-                            
+                            case 0:
+                                break;
+                            case 1:
+                                autoDx1.Visibility = Visibility.Visible;
+                                autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                macchineADx--;
+                                Thread.Sleep(TimeSpan.FromMilliseconds(500));
+                                autoDx1.Visibility = Visibility.Hidden;
+                                autoDx1.Margin = new Thickness(692, 231, 0, 0);
+                                break;
+                            case 2:
+                                autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                autoDx2.Margin = new Thickness(481, 231, 0, 0);
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                autoDx2.Margin = new Thickness(270, 231, 0, 0);
+                                macchineADx--;
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx2.Margin = new Thickness(10, 231, 0, 0);
+                                macchineADx--;
+                                break;
+                            case 3:
+                                autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                autoDx2.Margin = new Thickness(481, 231, 0, 0);
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                autoDx2.Margin = new Thickness(270, 231, 0, 0);
+                                autoDx3.Margin = new Thickness(481, 231, 0, 0);
+                                macchineADx--;
+                                Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                autoDx2.Margin = new Thickness(10, 231, 0, 0);
+                                macchineADx--;
+                                break;
+                                /*case 1:
+                                    autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                    macchineADx--;
+                                    break;
+                                case 1:
+                                    autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                    macchineADx--;
+                                    break;
+                                case 1:
+                                    autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                    macchineADx--;
+                                    break;
+                                case 1:
+                                    autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                    macchineADx--;
+                                    break;
+                                case 1:
+                                    autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                    macchineADx--;
+                                    break;
+                                case 1:
+                                    autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                    macchineADx--;
+                                    break;
+                                case 1:
+                                    autoDx1.Margin = new Thickness(481, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(270, 231, 0, 0);
+                                    Thread.Sleep(TimeSpan.FromMilliseconds(1000));
+                                    autoDx1.Margin = new Thickness(10, 231, 0, 0);
+                                    macchineADx--;
+                                    break;*/
                         }
                     }
+                    
+
                     imgStopSx.Visibility = Visibility.Hidden;
 
                 }));

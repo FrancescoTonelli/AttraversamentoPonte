@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="347" Margin="0,39,0,0" VerticalAlignment="Top" Width="792" Source="montagne.jpg"/>
+        <Image HorizontalAlignment="Left" Height="434" Margin="-18,21,-24,-36" VerticalAlignment="Top" Width="834" Source="ponte.png"/>
         <Image x:Name="autoDx1" HorizontalAlignment="Left" Height="100" Margin="692,231,0,0" VerticalAlignment="Top" Width="100" Source="autodx.png"/>
         <Image x:Name="imgStopDx" HorizontalAlignment="Left" Height="74" Margin="692,67,0,0" VerticalAlignment="Top" Width="74" Source="stop.png"/>
         <Image x:Name="imgStopSx" HorizontalAlignment="Left" Height="74" Margin="25,67,0,0" VerticalAlignment="Top" Width="74" Source="stop.png"/>
@@ -32,7 +33,6 @@
         <Image x:Name="autoSx10" HorizontalAlignment="Left" Height="100" Margin="-1,231,0,0" VerticalAlignment="Top" Width="100" Source="autosx.png"/>
         <Label x:Name="lblMacchineDx" Content="" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" Width="172"/>
         <Label x:Name="lblMacchineSx" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="172"/>
-        <Image HorizontalAlignment="Left" Height="434" Margin="-18,21,-24,-36" VerticalAlignment="Top" Width="834" Source="ponte.png"/>
         <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="707,391,0,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click"/>
         <Button x:Name="btnPlay" Content="Riprendi" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Width="75" Click="btnPlay_Click"/>
     </Grid>
