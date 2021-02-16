@@ -1,0 +1,15 @@
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\bin\Debug\AttraversamentoPonte.exe.config
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\bin\Debug\AttraversamentoPonte.exe
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\bin\Debug\AttraversamentoPonte.pdb
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte.csprojAssemblyReference.cache
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\MainWindow.g.cs
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\App.g.cs
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte_MarkupCompile.cache
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte_MarkupCompile.lref
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\MainWindow.baml
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte.g.resources
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte.Properties.Resources.resources
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte.csproj.GenerateResource.cache
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte.csproj.CoreCompileInputs.cache
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte.exe
+C:\Users\tonbr\Desktop\AttraversamentoPonte\AttraversamentoPonte\AttraversamentoPonte\obj\Debug\AttraversamentoPonte.pdb

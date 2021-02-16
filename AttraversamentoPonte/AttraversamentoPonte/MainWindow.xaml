@@ -8,11 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="339" Margin="10,43,0,0" VerticalAlignment="Top" Width="772" Source="montagne.jpg"/>
-        <Image x:Name="imgAutoDx1" HorizontalAlignment="Left" Height="100" Margin="682,201,0,0" VerticalAlignment="Top" Width="100" Source="autodx.png"/>
+        <Image x:Name="imgAutoDx1" HorizontalAlignment="Left" Height="100" Margin="682,202,0,0" VerticalAlignment="Top" Width="100" Source="autodx.png"/>
         <Image x:Name="imgPonte" HorizontalAlignment="Left" Height="409" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Source="ponte.png"/>
         <Image x:Name="imgStopDx" HorizontalAlignment="Left" Height="66" Margin="715,43,0,0" VerticalAlignment="Top" Width="67" Source="stop.png"/>
         <Image x:Name="imgStopSx" HorizontalAlignment="Left" Height="66" Margin="10,43,0,0" VerticalAlignment="Top" Width="67" Source="stop.png"/>
         <TextBox x:Name="lblAutoDx" HorizontalAlignment="Left" Height="23" Margin="715,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30"/>
         <TextBox x:Name="lblAutoSx" HorizontalAlignment="Left" Height="23" Margin="47,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30"/>
+        <Button x:Name="tmp" Content="Button" HorizontalAlignment="Left" Margin="354,13,0,0" VerticalAlignment="Top" Width="75" Click="tmp_Click"/>
     </Grid>
 </Window>
