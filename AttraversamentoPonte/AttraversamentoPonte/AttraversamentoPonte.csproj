@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{043D4A49-31A4-44FD-9D40-75B0104E2FB8}</ProjectGuid>
+    <ProjectGuid>{25801CC4-C317-4067-AF45-D8B7B8699C0E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>AttraversamentoPonte</RootNamespace>
     <AssemblyName>AttraversamentoPonte</AssemblyName>
@@ -95,17 +95,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="autodx.png" />
+    <Resource Include="autosx.png" />
     <Resource Include="montagne.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ponte.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="stop.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="autodx.png" />
-    <Resource Include="autosx.png" />
+    <Resource Include="ponte.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

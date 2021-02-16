@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autodx.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autosx.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ponte.png")]
 
 
